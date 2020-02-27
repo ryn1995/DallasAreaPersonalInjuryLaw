@@ -1,0 +1,413 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+header {
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background: #58B2E5;
+    padding: 0 10%;
+}
+
+.header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.logo {
+    margin-right: 16px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-right a {
+    color: #FFF;
+    border: 3px solid #FFF;
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: bold;
+    padding: 15px 40px;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+.header-right a:hover {
+    background: #0600A7
+}
+
+.hero {
+    padding: 0 10%;
+}
+
+.hero-image {
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+.hero-image-mobile {
+    margin: 0 auto;
+    max-width: 100%;
+    display: none;
+}
+
+.learn-more-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 98px;
+    text-shadow: 0 3px 15px #000;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 34px;
+    text-shadow: 0 3px 10px #000;
+}
+
+h4 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+sup {
+    vertical-align: super;
+  font-size: smaller;
+}
+
+.content-div p {
+    font-size: 22px;
+    margin: 24px 0;
+    line-height: 1.4;
+}
+
+.content-div h5 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.hero h1 {
+    margin-bottom: 18px;
+}
+.hero h2 {
+    margin-bottom: 60px;
+}
+
+.hero-button {
+    background: #58B2E5;
+    color: #FFF;
+    padding: 20px 60px;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 60px;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+.hero-button:hover {
+    background: #0600A7;
+}
+
+.hero-button a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.main-content {
+    margin: 0 22%;
+    text-align: left;
+    margin-bottom: 60px;
+}
+h3 {
+    margin-top: 50px;
+    font-size: 48px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.main-subheading {
+    text-align: center;
+}
+
+.horizontal-line {
+    border-bottom: 5px solid #58B2E5;
+    margin: 30px 0;
+}
+
+form {
+    padding: 0 10%;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+}
+
+.email-sent {
+    padding: 10px;
+    background: green;
+    color: white;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+textarea,
+select
+ {
+    border: 2px solid #707070;
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+}
+
+
+input[type=date], select {
+    width: 35%;
+}
+
+
+
+ input[type=radio], label[for=Yes], label[for=No] {
+    display: inline;
+} 
+
+label[for=desc] {
+    margin-top: 42px;
+}
+
+input[type="submit"] {
+    background: #58B2E5;
+    color: #FFF;
+    padding: 20px 60px;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 22px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    width: 100%;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+input[type="submit"]:hover {
+    background: #0600A7
+}
+
+footer {
+    min-height: 495px;
+    background: url("img/mas_googlemap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 85px;
+}
+
+.footer-details {
+    width: 400px;
+    height: 410px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: space-between;
+    border: 1px solid #707070;
+    box-shadow: 0 3px 10px;
+    margin-left: 280px;
+}
+
+.footer-details-section {
+    height: 100px;
+}
+
+.social-media-buttons img {
+    margin: 0 5px;
+    transition: transform .2s;
+}
+.social-media-buttons img:hover {
+    transform: scale(1.4);
+}
+
+.copyright-section {
+    background: #58B2E5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-right a {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+        h1 {
+            font-size: 58px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        .hero-button {
+            font-size: 20px;
+        }
+        nav {
+            padding: 0 5%;
+        }
+        .header-right a {
+            padding: 15px 20px;
+            font-size: 15px;
+        }
+        nav {
+            padding: 0 10%;
+        }
+        .nav-paragraph {
+            display: none;
+        }
+        form {
+            padding: 0;
+        }
+        input[type=date], select {
+            width: 50%;
+        }
+        .footer-details {
+            margin: 0 auto;
+        }
+        .content-div p {
+            font-size: 18px;
+        }
+        
+        .content-div h5 {
+            font-size: 20px;
+        }
+}
+
+@media only screen and (max-width: 425px) {
+
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .hero {
+        min-height: 188px;
+        padding: 0;
+    }
+    .main-content {
+        margin: 0 5%;
+    }
+    .footer-details {
+        width: 100%;
+    }
+    .hero-image {
+        display: none;
+    }
+    .hero-image-mobile {
+        display: block;
+    }
+    nav {
+        flex-direction: column;
+        height: 120px;
+    }
+    .header-left a {
+        text-align: center;
+    }
+    .logo {
+        width: 75%;
+        margin-right: 0;
+    }
+    .header-right a {
+        padding: 5px 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        min-height: 158px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    input[type=date], select {
+        width: 100%;
+    }
+}
